@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         const position = window.scrollY;
-        if(position){
-        header.classList.add('fixed-navbar');
+        if (position) {
+            header.classList.add('fixed-navbar');
 
         }
-        else{
-        header.classList.remove('fixed-navbar');
+        else {
+            header.classList.remove('fixed-navbar');
 
         }
     })
@@ -18,6 +18,5 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger.classList.toggle('active-close');
         navbar.classList.toggle('nav-active');
         header.classList.toggle('header-active');
-        // header.style.height="100vh";
     })
 });
